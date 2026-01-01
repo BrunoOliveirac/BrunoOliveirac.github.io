@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #00e4ff;
+  --secondary: #00ffa6;
+  --tertiary: #242424;
+  --default-transition-duration: 300ms;
+  --animate-spin: spin 2s linear infinite;
+  --gradient-right: linear-gradient(to right, #00e4ff, #00ffa6);
+  --gradient-bottom: linear-gradient(to bottom, #00e4ff, #00ffa6);
+}
+
+@layer base {
+  html {
+    font-family: Poppins, sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--tertiary);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-clip: padding-box;
+  background-image: var(--gradient-bottom);
+}
+
+.nav-link.active,
+.language-item.active {
+  border-bottom-color: var(--primary);
+}
+
+.tech {
+  color: black;
+  font-weight: 500;
+  margin: 0 0.25em;
+  position: relative;
+  display: inline-block;
+}
+
+.tech::before {
+  content: "";
+  z-index: -1;
+  inset: 0 -0.375rem;
+  position: absolute;
+  transform: skewY(-3deg);
+  background-image: linear-gradient(to right, #00e5ffb6, #00ffa6b6);
+}
+
+.tech span {
+  position: relative;
+}
+
+.tech.tech-title {
+  font-size: 2.25rem;
+}
+
+.tech.tech-title::before {
+  font-size: 2.25rem;
+  inset: -0.375rem -1rem;
+  border-radius: 0.375rem;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 0.5rem;
+  background: var(--tertiary);
+  background-clip: padding-box;
+  /* border: 2px solid transparent; */
+}
+
+.gradient-border:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  margin: -2px;
+  position: absolute;
+  border-radius: 0.5rem;
+  background: var(--gradient-right);
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Portfólio</title>
+
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body
+    class="container mx-auto overflow-x-hidden overflow-y-hidden relative *:transition-all *:duration-1000"
+  >
+    <section
+      id="loading"
+      class="fixed bg-(--tertiary) top-0 left-1/2 -translate-x-1/2 w-dvw h-dvh z-20 p-8"
+    >
+      <div
+        class="relative flex justify-center items-center w-full h-full *:absolute *:top-1/2 *:left-1/2 *:-translate-1/2"
+      >
+        <img
+          alt=""
+          width="192"
+          height="192"
+          class="animate-spin"
+          src="/assets/icons/gradient-cog.svg"
+        />
+
+        <img
+          alt=""
+          width="128"
+          height="128"
+          class="animate-spin"
+          src="/assets/icons/cog.svg"
+        />
+
+        <img
+          alt=""
+          width="36"
+          height="36"
+          src="/assets/icons/code.svg"
+          class="absolute top-1/2 left-1/2 -translate-1/2"
+        />
+
+        <div
+          class="max-w-[300px] md:max-w-sm w-full h-3 overflow-hidden rounded-full bg-gray-500 mt-[164px]"
+        >
+          <div
+            id="progress-bar"
+            class="h-full w-0 transition-all duration-[10ms] [background-image:var(--gradient-right)]"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header -->
+    <header
+      class="fixed left-0 top-0 w-dvw bg-(--tertiary) h-[5.75rem] flex justify-end items-center flex-1 flex-wrap gap-x-8 px-8 z-10 transition-none!"
+    >
+      <ul
+        class="flex items-center max-[33.125rem]:hidden *:pb-2 *:px-3 text-slate-300 *:cursor-pointer *:border-b-2 *:border-b-transparent *:hover:border-b-(--primary) *:transition-all"
+      >
+        <a href="#about" class="nav-link" data-i18n="about"></a>
+        <a href="#experience" class="nav-link" data-i18n="experience"></a>
+        <a href="#formation" class="nav-link" data-i18n="formation"></a>
+        <!-- <a href="#projects" class="nav-link" data-i18n="projects"></a>
+        <a href="#skills" class="nav-link" data-i18n="skills"></a> -->
+
+        <a href="#contact" class="nav-link" data-i18n="contact"></a>
+      </ul>
+
+      <div
+        id="language-list"
+        class="flex items-center *:pb-2 *:px-3 *:cursor-pointer *:border-b-2 *:border-b-transparent *:hover:border-b-(--primary) *:transition-all"
+      >
+        <button class="language-item" id="pt">
+          <img width="24" height="16" src="/assets/icons/pt.svg" alt="" />
+        </button>
+
+        <button class="language-item" id="en">
+          <img width="24" height="16" src="/assets/icons/en.svg" alt="" />
+        </button>
+
+        <button class="language-item" id="es">
+          <img width="24" height="16" src="/assets/icons/es.svg" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <!-- About Me / Presentation -->
+    <section id="about" class="pt-[8.25rem] max-md:px-8 opacity-0">
+      <div
+        class="flex max-sm:flex-col max-sm:flex-inverse items-center justify-center gap-10 md:gap-16"
+      >
+        <img alt="" class="w-80 h-80" src="/assets/images/square-code.svg" />
+
+        <div class="max-sm:text-center">
+          <h1 data-i18n="title" class="text-5xl font-bold text-slate-300"></h1>
+
+          <h1
+            data-i18n="fullstack"
+            class="text-5xl font-bold bg-clip-text text-transparent bg-linear-to-r from-white to-gray-700 mt-2"
+          ></h1>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mx-auto mt-20" data-i18n="presentation"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="experience">
+      <div class="flex justify-center mb-20">
+        <p class="tech tech-title">
+          <span data-i18n="experience"></span>
+        </p>
+      </div>
+
+      <div
+        class="relative gradient-border mb-14 py-5 px-6 max-w-[768px] mx-auto"
+      >
+        <p
+          class="absolute -top-4 -right-6 bg-(--tertiary) border border-(--secondary) text-(--secondary) rounded-lg px-3 py-1"
+        >
+          FullStack
+        </p>
+
+        <p class="text-white text-lg font-medium leading-none">
+          Operative Tecnologia
+        </p>
+
+        <p
+          data-i18n="fullstack_date"
+          class="text-gray-400 text-[11px] mt-1"
+        ></p>
+
+        <p data-i18n="fullstack_description" class="text-slate-300 mt-2"></p>
+      </div>
+
+      <div class="relative gradient-border py-4 px-6 max-w-[768px] mx-auto">
+        <p
+          class="absolute -top-4 -right-6 bg-(--tertiary) border border-(--secondary) text-(--secondary) rounded-lg px-3 py-1"
+        >
+          Trainee
+        </p>
+
+        <p class="text-white text-lg font-medium leading-none">
+          Operative Tecnologia
+        </p>
+
+        <p data-i18n="trainee_date" class="text-gray-400 text-[11px] mt-1"></p>
+
+        <p data-i18n="trainee_description" class="text-slate-300 mt-2"></p>
+      </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="formation">
+      <div class="flex justify-center mb-20">
+        <p class="tech tech-title">
+          <span data-i18n="formation"></span>
+        </p>
+      </div>
+
+      <div
+        class="relative gradient-border mb-14 py-5 px-6 max-w-[768px] mx-auto"
+      >
+        <p
+          data-i18n="technical_education"
+          class="absolute -top-4 -right-6 bg-(--tertiary) border border-(--secondary) text-(--secondary) rounded-lg px-3 py-1"
+        ></p>
+
+        <p class="text-white text-lg font-medium leading-none">
+          ETEC Arruda Mello
+        </p>
+
+        <p
+          data-i18n="technical_education_date_1"
+          class="text-gray-400 text-[11px] mt-1"
+        ></p>
+
+        <p
+          class="text-slate-300 mt-2"
+          data-i18n="technical_education_type_1"
+        ></p>
+      </div>
+
+      <div class="relative gradient-border py-4 px-6 max-w-[768px] mx-auto">
+        <p
+          data-i18n="technical_education"
+          class="absolute -top-4 -right-6 bg-(--tertiary) border border-(--secondary) text-(--secondary) rounded-lg px-3 py-1"
+        ></p>
+
+        <p class="text-white text-lg font-medium leading-none">
+          ETEC Arruda Mello
+        </p>
+
+        <p
+          data-i18n="technical_education_date_2"
+          class="text-gray-400 text-[11px] mt-1"
+        ></p>
+
+        <p
+          class="text-slate-300 mt-2"
+          data-i18n="technical_education_type_1"
+        ></p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="contact">
+      <div class="flex justify-center mb-20">
+        <p class="tech tech-title">
+          <span data-i18n="contact"></span>
+        </p>
+      </div>
+
+      <div
+        data-i18n="contact_description"
+        class="text-center text-slate-300 max-w-[768px] mx-auto mb-20"
+      ></div>
+
+      <div
+        class="grid md:grid-cols-2 gap-10 max-w-[768px] mx-auto *:bg-[#2B2B2B] *:flex *:flex-col *:justify-between *:rounded-lg *:py-5 *:px-6 *:hover:scale-105 *:transition-all"
+      >
+        <div>
+          <img
+            alt=""
+            width="92"
+            height="92"
+            class="mx-auto"
+            src="/assets/icons/github.svg"
+          />
+
+          <p class="text-white text-xl text-center font-medium mt-2">Github</p>
+
+          <p
+            data-i18n="github_description"
+            class="text-slate-300 text-center"
+          ></p>
+
+          <a
+            target="_blank"
+            data-i18n="see_profile"
+            href="https://github.com/BrunoOliveirac"
+            class="flex justify-center items-center border-2 border-(--tertiary) text-white h-10 rounded-lg cursor-pointer transition-all hover:bg-(--tertiary) px-3 mt-6"
+          ></a>
+        </div>
+
+        <div>
+          <img
+            alt=""
+            width="92"
+            height="92"
+            class="mx-auto"
+            src="/assets/icons/linkedin.svg"
+          />
+
+          <p class="text-white text-xl text-center font-medium mt-2">
+            LinkedIn
+          </p>
+
+          <p
+            class="text-slate-300 text-center"
+            data-i18n="linkedin_description"
+          ></p>
+
+          <a
+            target="_blank"
+            data-i18n="see_profile"
+            href="https://www.linkedin.com/in/bruno-oliveira-camussi"
+            class="flex justify-center items-center border-2 border-(--tertiary) text-white h-10 rounded-lg cursor-pointer transition-all hover:bg-(--tertiary) px-3 mt-6"
+          ></a>
+        </div>
+
+        <div>
+          <img
+            alt=""
+            width="92"
+            height="92"
+            class="mx-auto"
+            src="/assets/icons/email.svg"
+          />
+
+          <p
+            data-i18n="email"
+            class="text-white text-xl text-center font-medium mt-2"
+          ></p>
+
+          <p
+            data-i18n="email_description"
+            class="text-slate-300 text-center"
+          ></p>
+
+          <a
+            target="_blank"
+            data-i18n="contact_me"
+            href="mailto:brunocamussi.o@gmail.com"
+            class="flex justify-center items-center border-2 border-(--tertiary) text-white h-10 rounded-lg cursor-pointer transition-all hover:bg-(--tertiary) px-3 mt-6"
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-[8.25rem] pb-10">
+      <p
+        data-i18n="rights_reserved"
+        class="text-sm text-center text-slate-300"
+      ></p>
+
+      <p class="text-sm text-center text-slate-300 mt-1">Bruno Oliveira</p>
+    </footer>
+  </body>
+</html>

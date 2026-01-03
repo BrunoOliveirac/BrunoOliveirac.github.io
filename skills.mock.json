@@ -1,0 +1,137 @@
+[
+  {
+    "name": "HTML",
+    "image": "html",
+    "points": 5
+  },
+  {
+    "name": "CSS3",
+    "image": "css3",
+    "points": 5
+  },
+  {
+    "name": "JavaScript",
+    "image": "javascript",
+    "points": 5
+  },
+  {
+    "name": "TypeScript",
+    "image": "typescript",
+    "points": 5
+  },
+  {
+    "name": "C#",
+    "image": "csharp",
+    "points": 1
+  },
+  {
+    "name": "Java",
+    "image": "java",
+    "points": 2
+  },
+  {
+    "name": "Angular",
+    "image": "angular",
+    "points": 5
+  },
+  {
+    "name": "Ionic",
+    "image": "ionic",
+    "points": 4
+  },
+  {
+    "name": "React",
+    "image": "react",
+    "points": 1
+  },
+  {
+    "name": "Vue",
+    "image": "vue",
+    "points": 2
+  },
+  {
+    "name": "Node.js",
+    "image": "nodejs",
+    "points": 5
+  },
+  {
+    "name": "GraphQL",
+    "image": "graphql",
+    "points": 2
+  },
+  {
+    "name": "Spring Boot",
+    "image": "spring",
+    "points": 2
+  },
+  {
+    "name": ".NET Core",
+    "image": "dotnetcore",
+    "points": 1
+  },
+  {
+    "name": "Firebase",
+    "image": "firebase",
+    "points": 5
+  },
+  {
+    "name": "Elasticsearch",
+    "image": "elasticsearch",
+    "points": 3
+  },
+  {
+    "name": "MongoDB",
+    "image": "mongodb",
+    "points": 2
+  },
+  {
+    "name": "Tailwind",
+    "image": "tailwind",
+    "points": 5
+  },
+  {
+    "name": "Bootstrap",
+    "image": "bootstrap",
+    "points": 5
+  },
+  {
+    "name": "PrimeNG",
+    "image": "primeng",
+    "points": 4
+  },
+  {
+    "name": "Vuetify",
+    "image": "vuetify",
+    "points": 2
+  },
+  {
+    "name": "Sass",
+    "image": "sass",
+    "points": 5
+  },
+  {
+    "name": "Playwright",
+    "image": "playwright",
+    "points": 2
+  },
+  {
+    "name": "Vitest",
+    "image": "vitest",
+    "points": 2
+  },
+  {
+    "name": "Git",
+    "image": "git",
+    "points": 3
+  },
+  {
+    "name": "GitHub",
+    "image": "github",
+    "points": 3
+  },
+  {
+    "name": "Figma",
+    "image": "figma",
+    "points": 2
+  }
+]

@@ -22,12 +22,15 @@
   "technical_education_type_2": "Curso Técnico en Redes de Computadoras",
   "technical_education_date_1": "Febrero de 2019 - Diciembre de 2021",
   "technical_education_date_2": "Febrero de 2020 - Junio de 2021",
-  "contact_description": "Contáctame o vea más información sobre mí.",
+  "contact_description": "Contáctame o vea más información sobre mí",
   "email": "Correo electrónico",
   "github_description": "Repositorios, proyectos y contribuciones en desarrollo.",
   "email_description": "Contáctame directamente por correo electrónico.",
   "linkedin_description": "Perfil profesional, experiencias y networking.",
   "see_profile": "Ver perfil",
   "contact_me": "Contáctame",
-  "rights_reserved": "Todos los Derechos Reservados"
+  "rights_reserved": "Todos los Derechos Reservados",
+  "skills_description": "Conjunto de habilidades y tecnologías con las que poseo experiencia y que pueden contribuir a sus proyectos",
+  "evaluation_criteria": "Criterios de evaluación",
+  "evaluation_criteria_description": "Conceptos fundamentales, uso en proyectos reales, buenas prácticas, rendimiento y la capacidad de resolver problemas"
 }

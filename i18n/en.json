@@ -22,12 +22,15 @@
   "technical_education_type_2": "Technical Course in Computer Networks",
   "technical_education_date_1": "February 2019 - December 2021",
   "technical_education_date_2": "February 2020 - June 2021",
-  "contact_description": "Contact me or see more information about me.",
+  "contact_description": "Contact me or see more information about me",
   "email": "E-mail",
   "github_description": "Repositories, projects and contributions in development.",
   "email_description": "Contact me directly by email.",
   "linkedin_description": "Professional profile, experiences and networking.",
   "see_profile": "See profile",
   "contact_me": "Contact me",
-  "rights_reserved": "All Rights Reserved"
+  "rights_reserved": "All Rights Reserved",
+  "skills_description": "A set of skills and technologies in which I have experience and that can contribute to your projects",
+  "evaluation_criteria": "Evaluation criteria",
+  "evaluation_criteria_description": "Concepts fundamental, real use, good practices, performance and the ability to solve problems"
 }

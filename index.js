@@ -1,6 +1,7 @@
 const enTranslation = await fetch("./i18n/en.json").then((res) => res.json());
 const esTranslation = await fetch("./i18n/es.json").then((res) => res.json());
 const ptTranslation = await fetch("./i18n/pt.json").then((res) => res.json());
+const skills = await fetch("./skills.mock.json").then((res) => res.json());
 
 const resources = new Map(
   Object.entries({ pt: ptTranslation, en: enTranslation, es: esTranslation })
@@ -19,7 +20,7 @@ const interval = setInterval(() => {
   progressBarElement.style.width = progress + "%";
 
   if (progress >= 100) clearInterval(interval);
-}, 7); // 700ms / 100 = 7ms
+}, 11); // 1100ms / 100 = 11ms
 
 // Set the page text and active class of navs and languages
 updateLanguageTexts();
@@ -33,11 +34,36 @@ setActiveSection();
 const languageElement = document.querySelector(`#${currentLanguage}`);
 if (languageElement) languageElement.classList.add("active");
 
+// Skills Section
+const skillsContainerElement = document.getElementById("skills-container");
+
+skills.forEach((skill) => {
+  const card = document.createElement("div");
+
+  card.innerHTML = `
+    <div>
+      <div class="bg-[#2B2B2B] rounded-xl w-[118px] p-6 mb-3">
+        <img class="mx-auto" src="/assets/icons/skills/${
+          skill.image
+        }.svg" width="48" height="48" alt="${skill.name}">
+        
+        <div class="flex justify-center gap-1 mt-4">
+          ${renderPoints(skill.points)}
+        </div>
+      </div>
+
+      <p class="text-slate-300 text-lg text-center">${skill.name}</p>
+    </div>
+  `;
+
+  skillsContainerElement.appendChild(card);
+});
+
 const scrollY = localStorage.getItem("scrollY");
 if (scrollY !== null) window.scrollTo(0, parseInt(scrollY, 10));
 
-sectionElements.forEach((section) => {
-  setTimeout(() => {
+setTimeout(() => {
+  sectionElements.forEach((section) => {
     if (section.id === "loading") {
       section.classList.add("opacity-0");
       setTimeout(() => (section.hidden = true), 700);
@@ -45,8 +71,8 @@ sectionElements.forEach((section) => {
       section.classList.remove("opacity-0");
       setTimeout(() => bodyElement.classList.remove("overflow-y-hidden"), 250);
     }
-  }, 700);
-});
+  });
+}, 750);
 
 /**
  * Change the language of the page
@@ -110,4 +136,42 @@ function updateLanguageTexts() {
       el.innerHTML = `©${new Date().getFullYear()} | ${el.innerHTML}`;
     }
   });
+}
+
+/**
+ * Render the skills points
+ */
+function renderPoints(points) {
+  const color = getSkillColor(points);
+  let dots = "";
+
+  for (let i = 1; i <= 5; i++) {
+    dots += `
+      <span class="w-1.5 h-1.5 rounded-full ${
+        i <= points ? color : "bg-gray-300"
+      }"></span>
+    `;
+  }
+
+  return dots;
+}
+
+/**
+ * Get the color of the skill based on the points
+ */
+function getSkillColor(points) {
+  switch (points) {
+    case 1:
+      return "bg-[#ef4444]";
+    case 2:
+      return "bg-[#f97316]";
+    case 3:
+      return "bg-[#eab308]";
+    case 4:
+      return "bg-[#22c55e]";
+    case 5:
+      return "bg-[#15803d]";
+    default:
+      return "bg-[#d1d5db]";
+  }
 }

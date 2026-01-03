@@ -8,6 +8,7 @@
     <title>Portfólio</title>
 
     <link href="./style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/code.ico" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="index.js"></script>
   </head>
@@ -67,8 +68,8 @@
         <a href="#about" class="nav-link" data-i18n="about"></a>
         <a href="#experience" class="nav-link" data-i18n="experience"></a>
         <a href="#formation" class="nav-link" data-i18n="formation"></a>
-        <!-- <a href="#projects" class="nav-link" data-i18n="projects"></a>
-        <a href="#skills" class="nav-link" data-i18n="skills"></a> -->
+        <!-- <a href="#projects" class="nav-link" data-i18n="projects"></a> -->
+        <a href="#skills" class="nav-link" data-i18n="skills"></a>
 
         <a href="#contact" class="nav-link" data-i18n="contact"></a>
       </ul>
@@ -92,7 +93,7 @@
     </header>
 
     <!-- About Me / Presentation -->
-    <section id="about" class="pt-[8.25rem] max-md:px-8 opacity-0">
+    <section id="about" class="pt-[8.25rem] px-8 opacity-0">
       <div
         class="flex max-sm:flex-col max-sm:flex-inverse items-center justify-center gap-10 md:gap-16"
       >
@@ -112,7 +113,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="experience">
+    <section class="pt-[8.25rem] px-8 opacity-0" id="experience">
       <div class="flex justify-center mb-20">
         <p class="tech tech-title">
           <span data-i18n="experience"></span>
@@ -158,7 +159,7 @@
     </section>
 
     <!-- Formation Section -->
-    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="formation">
+    <section class="pt-[8.25rem] px-8 opacity-0" id="formation">
       <div class="flex justify-center mb-20">
         <p class="tech tech-title">
           <span data-i18n="formation"></span>
@@ -210,18 +211,61 @@
       </div>
     </section>
 
+    <!-- Skills Section -->
+    <section class="pt-[8.25rem] px-8 opacity-0" id="skills">
+      <div class="flex justify-center mb-20">
+        <p class="tech tech-title">
+          <span data-i18n="skills"></span>
+        </p>
+      </div>
+
+      <p
+        data-i18n="skills_description"
+        class="text-center text-slate-300 max-w-md mx-auto mb-10"
+      ></p>
+
+      <div
+        class="flex items-start gap-4 bg-amber-500/5 border border-amber-500 rounded-lg p-4 max-w-[768px] mx-auto mb-20"
+      >
+        <img
+          alt=""
+          width="20"
+          height="20"
+          class="mt-1"
+          src="/assets/icons/exclamation.svg"
+        />
+
+        <div>
+          <p
+            data-i18n="evaluation_criteria"
+            class="text-xl text-amber-500 font-medium mb-2"
+          ></p>
+
+          <p
+            data-i18n="evaluation_criteria_description"
+            class="text-slate-300"
+          ></p>
+        </div>
+      </div>
+
+      <div
+        id="skills-container"
+        class="grid grid-cols-[repeat(auto-fill,minmax(118px,1fr))] justify-items-center gap-10 max-w-[890px] mx-auto"
+      ></div>
+    </section>
+
     <!-- Contact Section -->
-    <section class="pt-[8.25rem] max-md:px-8 opacity-0" id="contact">
+    <section class="pt-[8.25rem] px-8 opacity-0" id="contact">
       <div class="flex justify-center mb-20">
         <p class="tech tech-title">
           <span data-i18n="contact"></span>
         </p>
       </div>
 
-      <div
+      <p
         data-i18n="contact_description"
         class="text-center text-slate-300 max-w-[768px] mx-auto mb-20"
-      ></div>
+      ></p>
 
       <div
         class="grid md:grid-cols-2 gap-10 max-w-[768px] mx-auto *:bg-[#2B2B2B] *:flex *:flex-col *:justify-between *:rounded-lg *:py-5 *:px-6 *:hover:scale-105 *:transition-all"
@@ -305,6 +349,7 @@
       </div>
     </section>
 
+    <!-- Rights Reserved Footer -->
     <footer class="pt-[8.25rem] pb-10">
       <p
         data-i18n="rights_reserved"

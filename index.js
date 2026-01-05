@@ -1,11 +1,26 @@
 const enTranslation = await fetch("./i18n/en.json").then((res) => res.json());
 const esTranslation = await fetch("./i18n/es.json").then((res) => res.json());
 const ptTranslation = await fetch("./i18n/pt.json").then((res) => res.json());
-const skills = await fetch("./skills.mock.json").then((res) => res.json());
+
+const skills = await fetch("./assets/mocks/skills.mock.json").then((res) =>
+  res.json()
+);
+
+const projects = await fetch("./assets/mocks/projects.mock.json").then((res) =>
+  res.json()
+);
 
 const resources = new Map(
   Object.entries({ pt: ptTranslation, en: enTranslation, es: esTranslation })
 );
+
+const projectColors = [
+  "bg-blue-700/20",
+  "bg-purple-700/20",
+  "bg-emerald-700/20",
+  "bg-yellow-700/20",
+  "bg-red-700/20",
+];
 
 let currentLanguage = localStorage.getItem("language") || "pt";
 if (!localStorage.getItem("language")) updateLanguageTexts();
@@ -21,6 +36,34 @@ const interval = setInterval(() => {
 
   if (progress >= 100) clearInterval(interval);
 }, 11); // 1100ms / 100 = 11ms
+
+// Projects Section
+const projectsContainerElement = document.getElementById("projects-container");
+
+projects.forEach((project) => {
+  const card = document.createElement("div");
+
+  card.innerHTML = `
+    <div class="gradient-border p-5 rounded-xl h-full">
+      <h3 class="text-lg text-white font-semibold mb-3" data-i18n="${
+        project.title
+      }"></h3>
+
+      <div class="flex flex-wrap gap-2 text-sm mb-3">
+        ${project.types
+          .map(
+            (type, index) =>
+              `<span class="rounded-full ${projectColors[index]} text-white px-3 py-1" data-i18n="${type}"></span>`
+          )
+          .join("")}
+      </div>
+
+      <p class="text-sm text-slate-300">${project.stack.join(" • ")}</p>
+    </div>
+  `;
+
+  projectsContainerElement.appendChild(card);
+});
 
 // Set the page text and active class of navs and languages
 updateLanguageTexts();
@@ -59,6 +102,7 @@ skills.forEach((skill) => {
   skillsContainerElement.appendChild(card);
 });
 
+// Scroll Section
 const scrollY = localStorage.getItem("scrollY");
 if (scrollY !== null) window.scrollTo(0, parseInt(scrollY, 10));
 
@@ -73,6 +117,11 @@ setTimeout(() => {
     }
   });
 }, 750);
+
+window.addEventListener("scroll", () => {
+  setActiveSection();
+  localStorage.setItem("scrollY", window.scrollY);
+});
 
 /**
  * Change the language of the page
@@ -89,11 +138,6 @@ document.addEventListener("click", (event) => {
 
     return;
   }
-});
-
-window.addEventListener("scroll", () => {
-  setActiveSection();
-  localStorage.setItem("scrollY", window.scrollY);
 });
 
 /**

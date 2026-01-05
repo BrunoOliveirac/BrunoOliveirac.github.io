@@ -1,0 +1,156 @@
+[
+  {
+    "title": "projects_2",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase",
+      "Asaas",
+      "Webmania"
+    ]
+  },
+  {
+    "title": "projects_4",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_1",
+    "types": [
+      "web_system",
+      "mobile_app",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Ionic",
+      "Node.js",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_3",
+    "types": [
+      "web_system",
+      "fullstack",
+      "external_api"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase",
+      "Evolution API",
+      "Chatwoot",
+      "Uazapi"
+    ]
+  },
+  {
+    "title": "projects_5",
+    "types": [
+      "mobile_app",
+      "front_end",
+      "api_integration"
+    ],
+    "stack": [
+      "Angular",
+      "Ionic",
+      "API REST"
+    ]
+  },
+  {
+    "title": "projects_6",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Brapi"
+    ]
+  },
+  {
+    "title": "projects_7",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_8",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_9",
+    "types": [
+      "mobile_app",
+      "front_end"
+    ],
+    "stack": [
+      "Angular",
+      "Ionic",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_10",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase"
+    ]
+  },
+  {
+    "title": "projects_11",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase",
+      "Asaas"
+    ]
+  },
+  {
+    "title": "projects_12",
+    "types": [
+      "web_system",
+      "fullstack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase"
+    ]
+  }
+]

@@ -42,7 +42,12 @@
   {
     "name": "React",
     "image": "react",
-    "points": 1
+    "points": 2
+  },
+  {
+    "name": "Next.js",
+    "image": "nextjs",
+    "points": 2
   },
   {
     "name": "Vue",
@@ -55,6 +60,11 @@
     "points": 5
   },
   {
+    "name": ".NET Core",
+    "image": "dotnetcore",
+    "points": 1
+  },
+  {
     "name": "GraphQL",
     "image": "graphql",
     "points": 2
@@ -65,11 +75,6 @@
     "points": 2
   },
   {
-    "name": ".NET Core",
-    "image": "dotnetcore",
-    "points": 1
-  },
-  {
     "name": "Firebase",
     "image": "firebase",
     "points": 5
@@ -78,6 +83,11 @@
     "name": "Elasticsearch",
     "image": "elasticsearch",
     "points": 3
+  },
+  {
+    "name": "PostgreSQL",
+    "image": "postgresql",
+    "points": 2
   },
   {
     "name": "MongoDB",

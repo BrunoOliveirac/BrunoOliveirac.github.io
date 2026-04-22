@@ -28,16 +28,6 @@
     "points": 5
   },
   {
-    "name": "React",
-    "image": "react",
-    "points": 2
-  },
-  {
-    "name": "Vue",
-    "image": "vue",
-    "points": 2
-  },
-  {
     "name": "Ionic",
     "image": "ionic",
     "points": 4
@@ -48,17 +38,27 @@
     "points": 2
   },
   {
-    "name": "back_end"
+    "name": "React",
+    "image": "react",
+    "points": 2
   },
   {
-    "name": "C#",
-    "image": "csharp",
-    "points": 1
+    "name": "Vue",
+    "image": "vue",
+    "points": 2
+  },
+  {
+    "name": "back_end"
   },
   {
     "name": "Java",
     "image": "java",
     "points": 2
+  },
+  {
+    "name": "C#",
+    "image": "csharp",
+    "points": 1
   },
   {
     "name": "Node.js",
@@ -89,13 +89,18 @@
     "points": 3
   },
   {
-    "name": "PostgreSQL",
-    "image": "postgresql",
+    "name": "MongoDB",
+    "image": "mongodb",
     "points": 2
   },
   {
-    "name": "MongoDB",
-    "image": "mongodb",
+    "name": "MySQL",
+    "image": "mysql",
+    "points": 2
+  },
+  {
+    "name": "PostgreSQL",
+    "image": "postgresql",
     "points": 2
   },
   {
@@ -140,13 +145,13 @@
     "points": 4
   },
   {
-    "name": "Vuetify",
-    "image": "vuetify",
+    "name": "Shadcn",
+    "image": "shadcn",
     "points": 2
   },
   {
-    "name": "Shadcn",
-    "image": "shadcn",
+    "name": "Vuetify",
+    "image": "vuetify",
     "points": 2
   },
   {
@@ -171,6 +176,16 @@
     "name": "others"
   },
   {
+    "name": "Chart.js",
+    "image": "chartjs",
+    "points": 4
+  },
+  {
+    "name": "Kanban",
+    "image": "kanban",
+    "points": 4
+  },
+  {
     "name": "Git",
     "image": "git",
     "points": 3
@@ -181,23 +196,13 @@
     "points": 3
   },
   {
-    "name": "Figma",
-    "image": "figma",
-    "points": 2
-  },
-  {
     "name": "RxJS",
     "image": "rxjs",
     "points": 3
   },
   {
-    "name": "Chart.js",
-    "image": "chartjs",
-    "points": 4
-  },
-  {
-    "name": "Kanban",
-    "image": "kanban",
-    "points": 4
+    "name": "Figma",
+    "image": "figma",
+    "points": 2
   }
 ]

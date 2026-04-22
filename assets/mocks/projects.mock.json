@@ -3,7 +3,7 @@
     "title": "projects_2",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -17,7 +17,7 @@
     "title": "projects_4",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -30,20 +30,21 @@
     "types": [
       "web_system",
       "mobile_app",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
       "Ionic",
       "Node.js",
-      "Firebase"
+      "Firebase",
+      "Chart.js"
     ]
   },
   {
     "title": "projects_3",
     "types": [
       "web_system",
-      "fullstack",
+      "full-stack",
       "external_api"
     ],
     "stack": [
@@ -72,7 +73,7 @@
     "title": "projects_6",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -84,7 +85,7 @@
     "title": "projects_7",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -96,7 +97,7 @@
     "title": "projects_8",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -120,19 +121,7 @@
     "title": "projects_10",
     "types": [
       "web_system",
-      "fullstack"
-    ],
-    "stack": [
-      "Angular",
-      "Node.js",
-      "Firebase"
-    ]
-  },
-  {
-    "title": "projects_11",
-    "types": [
-      "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",
@@ -142,10 +131,24 @@
     ]
   },
   {
+    "title": "projects_11",
+    "types": [
+      "web_system",
+      "full-stack"
+    ],
+    "stack": [
+      "Angular",
+      "Node.js",
+      "Firebase",
+      "Asaas",
+      "Chart.js"
+    ]
+  },
+  {
     "title": "projects_12",
     "types": [
       "web_system",
-      "fullstack"
+      "full-stack"
     ],
     "stack": [
       "Angular",

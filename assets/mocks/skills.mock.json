@@ -1,5 +1,8 @@
 [
   {
+    "name": "front_end"
+  },
+  {
     "name": "HTML",
     "image": "html",
     "points": 5
@@ -20,24 +23,9 @@
     "points": 5
   },
   {
-    "name": "C#",
-    "image": "csharp",
-    "points": 1
-  },
-  {
-    "name": "Java",
-    "image": "java",
-    "points": 2
-  },
-  {
     "name": "Angular",
     "image": "angular",
     "points": 5
-  },
-  {
-    "name": "Ionic",
-    "image": "ionic",
-    "points": 4
   },
   {
     "name": "React",
@@ -45,13 +33,31 @@
     "points": 2
   },
   {
+    "name": "Vue",
+    "image": "vue",
+    "points": 2
+  },
+  {
+    "name": "Ionic",
+    "image": "ionic",
+    "points": 4
+  },
+  {
     "name": "Next.js",
     "image": "nextjs",
     "points": 2
   },
   {
-    "name": "Vue",
-    "image": "vue",
+    "name": "back_end"
+  },
+  {
+    "name": "C#",
+    "image": "csharp",
+    "points": 1
+  },
+  {
+    "name": "Java",
+    "image": "java",
     "points": 2
   },
   {
@@ -65,14 +71,12 @@
     "points": 1
   },
   {
-    "name": "GraphQL",
-    "image": "graphql",
-    "points": 2
-  },
-  {
     "name": "Spring Boot",
     "image": "spring",
     "points": 2
+  },
+  {
+    "name": "database"
   },
   {
     "name": "Firebase",
@@ -95,6 +99,27 @@
     "points": 2
   },
   {
+    "name": "integration_api"
+  },
+  {
+    "name": "GraphQL",
+    "image": "graphql",
+    "points": 2
+  },
+  {
+    "name": "Asaas",
+    "image": "asaas",
+    "points": 2
+  },
+  {
+    "name": "Webmania",
+    "image": "webmania",
+    "points": 2
+  },
+  {
+    "name": "ui_styling"
+  },
+  {
     "name": "Tailwind",
     "image": "tailwind",
     "points": 5
@@ -102,6 +127,11 @@
   {
     "name": "Bootstrap",
     "image": "bootstrap",
+    "points": 5
+  },
+  {
+    "name": "Sass",
+    "image": "sass",
     "points": 5
   },
   {
@@ -115,19 +145,30 @@
     "points": 2
   },
   {
-    "name": "Sass",
-    "image": "sass",
-    "points": 5
+    "name": "Shadcn",
+    "image": "shadcn",
+    "points": 2
+  },
+  {
+    "name": "testing"
+  },
+  {
+    "name": "Jest",
+    "image": "jest",
+    "points": 3
   },
   {
     "name": "Playwright",
     "image": "playwright",
-    "points": 2
+    "points": 3
   },
   {
     "name": "Vitest",
     "image": "vitest",
-    "points": 2
+    "points": 3
+  },
+  {
+    "name": "others"
   },
   {
     "name": "Git",
@@ -143,5 +184,20 @@
     "name": "Figma",
     "image": "figma",
     "points": 2
+  },
+  {
+    "name": "RxJS",
+    "image": "rxjs",
+    "points": 3
+  },
+  {
+    "name": "Chart.js",
+    "image": "chartjs",
+    "points": 4
+  },
+  {
+    "name": "Kanban",
+    "image": "kanban",
+    "points": 4
   }
 ]

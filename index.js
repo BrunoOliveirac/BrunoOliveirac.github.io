@@ -3,15 +3,15 @@ const esTranslation = await fetch("./i18n/es.json").then((res) => res.json());
 const ptTranslation = await fetch("./i18n/pt.json").then((res) => res.json());
 
 const skills = await fetch("./assets/mocks/skills.mock.json").then((res) =>
-  res.json()
+  res.json(),
 );
 
 const projects = await fetch("./assets/mocks/projects.mock.json").then((res) =>
-  res.json()
+  res.json(),
 );
 
 const resources = new Map(
-  Object.entries({ pt: ptTranslation, en: enTranslation, es: esTranslation })
+  Object.entries({ pt: ptTranslation, en: enTranslation, es: esTranslation }),
 );
 
 const projectColors = [
@@ -53,7 +53,7 @@ projects.forEach((project) => {
         ${project.types
           .map(
             (type, index) =>
-              `<span class="rounded-full ${projectColors[index]} text-white px-3 py-1" data-i18n="${type}"></span>`
+              `<span class="rounded-full ${projectColors[index]} text-white px-3 py-1" data-i18n="${type}"></span>`,
           )
           .join("")}
       </div>
@@ -80,22 +80,39 @@ if (languageElement) languageElement.classList.add("active");
 // Skills Section
 const skillsContainerElement = document.getElementById("skills-container");
 
-skills.forEach((skill) => {
+skills.map((skill, index) => {
+  if (!skill.points) {
+    const contextTitle = document.createElement("h3");
+    contextTitle.id = skill.name;
+    contextTitle.innerHTML = resources.get(currentLanguage)[skill.name];
+
+    contextTitle.classList.add(
+      "text-lg",
+      "text-white",
+      "font-semibold",
+      "w-full",
+    );
+
+    if (index) contextTitle.classList.add("mt-3");
+    skillsContainerElement.appendChild(contextTitle);
+    return;
+  }
+
   const card = document.createElement("div");
 
   card.innerHTML = `
     <div>
-      <div class="bg-[#2B2B2B] rounded-xl w-[118px] p-6 mb-3">
-        <img class="mx-auto" src="/assets/icons/skills/${
+      <div class="bg-[#2B2B2B] rounded-xl w-[80px] p-4 mb-3">
+        <img class="aspect-square mx-auto" src="/assets/icons/skills/${
           skill.image
-        }.svg" width="48" height="48" alt="${skill.name}">
+        }.svg" width="36" height="36" alt="${skill.name}">
         
         <div class="flex justify-center gap-1 mt-4">
           ${renderPoints(skill.points)}
         </div>
       </div>
-
-      <p class="text-slate-300 text-lg text-center">${skill.name}</p>
+        
+      <p class="text-sm text-slate-300 text-center">${skill.name}</p>
     </div>
   `;
 
@@ -136,6 +153,13 @@ document.addEventListener("click", (event) => {
       else item.classList.remove("active");
     });
 
+    skills
+      .filter((skill) => !skill.points)
+      .map((skill) => {
+        const contextTitle = document.getElementById(skill.name);
+        contextTitle.innerHTML = resources.get(currentLanguage)[skill.name];
+      });
+
     return;
   }
 });
@@ -159,7 +183,7 @@ function setActiveSection() {
     links.forEach((link) => {
       link.classList.toggle(
         "active",
-        link.getAttribute("href") === `#${currentSectionId}`
+        link.getAttribute("href") === `#${currentSectionId}`,
       );
     });
   }
@@ -181,6 +205,10 @@ function updateLanguageTexts() {
     }
   });
 }
+
+/**
+ *
+ */
 
 /**
  * Render the skills points
